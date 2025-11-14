@@ -53,7 +53,18 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 pt-8 text-center text-sm">
-          <p>{t('copyright')}</p>
+          <p>
+            © 2025 Powered by{' '}
+            <a 
+              href="https://tubban.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary-400 hover:text-primary-300 underline transition-colors"
+            >
+              Tubban.com
+            </a>
+            {' '}Agentic AI Services.
+          </p>
         </div>
       </div>
     </footer>
