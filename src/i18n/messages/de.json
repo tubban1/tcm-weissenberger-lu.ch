@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Behandlungen",
+    "symptoms": "Symptome",
+    "appointment": "Termin",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "TCM Weissenberger",
+    "subtitle": "Ganzheitliche Medizin mit 2,000 Jahren Erfahrung",
+    "tagline": "Modern integriert. Wissenschaftlich orientiert.",
+    "description": "Individuelle Behandlung nach TCM und WHO-ICD-11 klassifiziert.",
+    "insurance": "Krankenkassen anerkannt",
+    "quickAppointment": "Termin vereinbaren",
+    "coreServices": "Unsere Behandlungen",
+    "aboutPreview": "Über uns",
+    "uniqueFeatures": {
+      "title": "Unsere Besonderheiten",
+      "icd11": "Schweizweit erstes ICD-11-basiertes intelligentes TCM-Patientenakten-System",
+      "ai": "KI-gestützte Gesundheitsanalyse",
+      "transparent": "Transparente Behandlungsprozesse"
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "mission": "Ganzheitliche Medizin mit wissenschaftlicher Basis",
+    "values": "Transparente Behandlung nach modernen Standards"
+  },
+  "services": {
+    "title": "Behandlungen",
+    "acupuncture": {
+      "title": "Akupunktur",
+      "description": "Traditionelle Akupunktur zur Schmerzlinderung und Körperregulierung"
+    },
+    "herbs": {
+      "title": "Chinesische Kräutermedizin",
+      "description": "Individuelle Kräuterrezepturen zur Konstitutionsregulierung"
+    },
+    "tuina": {
+      "title": "Tuina-Massage",
+      "description": "Professionelle Tuina-Techniken zur Entspannung"
+    },
+    "cupping": {
+      "title": "Schröpfen",
+      "description": "Meridian-Durchgängigkeit und Blutaktivierung"
+    },
+    "moxibustion": {
+      "title": "Moxibustion",
+      "description": "Wärme- und Qi-Stärkung"
+    },
+    "consultation": {
+      "title": "TCM-Beratung",
+      "description": "Gesundheitsbewertung und Lebensstilberatung"
+    }
+  },
+  "symptoms": {
+    "title": "Symptome",
+    "backPain": {
+      "title": "Rückenschmerzen – wie hilft Akupunktur?",
+      "description": "Behandlung von Rückenschmerzen mit TCM"
+    },
+    "migraine": {
+      "title": "Migräne – wissenschaftliche Studien über TCM",
+      "description": "TCM-Behandlung von Migräne"
+    },
+    "stress": {
+      "title": "Stress & Schlafprobleme – ganzheitliche Behandlung",
+      "description": "Ganzheitliche Behandlung von Stress und Schlafproblemen"
+    },
+    "digestion": {
+      "title": "Verdauungsprobleme – TCM Sicht und Therapie",
+      "description": "TCM-Behandlung von Verdauungsproblemen"
+    }
+  },
+  "appointment": {
+    "title": "Termin vereinbaren",
+    "subtitle": "Einfache Terminvereinbarung ohne Registrierung",
+    "form": {
+      "name": "Name",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "service": "Behandlung",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "notes": "Bemerkungen",
+      "submit": "Termin buchen"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "hours": "Öffnungszeiten",
+    "transport": "Anreise",
+    "parking": "Parkmöglichkeiten",
+    "insurance": "Versicherung",
+    "prices": "Preise"
+  },
+  "footer": {
+    "description": "Professionelle TCM-Behandlung in der Schweiz",
+    "links": "Schnelllinks",
+    "contact": "Kontakt",
+    "copyright": "© 2024 TCM Weissenberger. Alle Rechte vorbehalten."
+  }
+}
+

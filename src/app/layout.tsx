@@ -1,30 +1,15 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
+import { defaultLocale } from '@/i18n/config'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'TCM Weissenberger - 中医诊所',
-  description: '专业中医诊疗服务，传承中医文化，为您提供健康保障',
-}
-
+// 根布局：返回完整的 HTML 结构
+// next-intl 中间件会自动处理语言路由，将 / 重定向到 /de
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="zh-CN">
-      <body className={inter.className}>
-        <Nav />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
-      </body>
+    <html lang={defaultLocale}>
+      <body>{children}</body>
     </html>
   )
 }

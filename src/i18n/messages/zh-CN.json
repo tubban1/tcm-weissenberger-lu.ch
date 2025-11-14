@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务项目",
+    "symptoms": "症状",
+    "appointment": "预约就诊",
+    "contact": "联系方式"
+  },
+  "home": {
+    "title": "TCM Weissenberger",
+    "subtitle": "拥有2000年历史的整体医学",
+    "tagline": "现代整合。科学导向。",
+    "description": "根据TCM和WHO-ICD-11分类的个性化治疗。",
+    "insurance": "健康保险认可",
+    "quickAppointment": "预约就诊",
+    "coreServices": "我们的治疗",
+    "aboutPreview": "关于我们",
+    "uniqueFeatures": {
+      "title": "我们的特色",
+      "icd11": "瑞士首个基于ICD-11的智能中医病历系统",
+      "ai": "AI辅助健康分析",
+      "transparent": "透明的治疗过程"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "mission": "基于科学的整体医学",
+    "values": "符合现代标准的透明治疗"
+  },
+  "services": {
+    "title": "服务项目",
+    "acupuncture": {
+      "title": "针灸治疗",
+      "description": "传统针灸疗法，缓解疼痛，调理身体"
+    },
+    "herbs": {
+      "title": "中药调理",
+      "description": "个性化中药配方，调理体质"
+    },
+    "tuina": {
+      "title": "推拿按摩",
+      "description": "专业推拿手法，舒缓筋骨"
+    },
+    "cupping": {
+      "title": "拔罐疗法",
+      "description": "疏通经络，活血化瘀"
+    },
+    "moxibustion": {
+      "title": "艾灸治疗",
+      "description": "温经散寒，补气养血"
+    },
+    "consultation": {
+      "title": "中医咨询",
+      "description": "健康评估，养生指导"
+    }
+  },
+  "symptoms": {
+    "title": "症状",
+    "backPain": {
+      "title": "背痛 – 针灸如何帮助？",
+      "description": "中医治疗背痛"
+    },
+    "migraine": {
+      "title": "偏头痛 – 关于中医的科学研究",
+      "description": "中医治疗偏头痛"
+    },
+    "stress": {
+      "title": "压力与睡眠问题 – 整体治疗",
+      "description": "压力与睡眠问题的整体治疗"
+    },
+    "digestion": {
+      "title": "消化问题 – 中医视角与治疗",
+      "description": "中医治疗消化问题"
+    }
+  },
+  "appointment": {
+    "title": "预约就诊",
+    "subtitle": "简单预约，无需注册",
+    "form": {
+      "name": "姓名",
+      "phone": "电话",
+      "email": "邮箱",
+      "service": "服务",
+      "date": "日期",
+      "time": "时间",
+      "notes": "备注",
+      "submit": "预约"
+    }
+  },
+  "contact": {
+    "title": "联系方式",
+    "address": "地址",
+    "phone": "电话",
+    "email": "邮箱",
+    "hours": "营业时间",
+    "transport": "交通",
+    "parking": "停车",
+    "insurance": "保险",
+    "prices": "价格"
+  },
+  "footer": {
+    "description": "瑞士专业中医诊疗服务",
+    "links": "快速链接",
+    "contact": "联系方式",
+    "copyright": "© 2024 TCM Weissenberger. 保留所有权利。"
+  }
+}
+

@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "symptoms": "Symptoms",
+    "appointment": "Appointment",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "TCM Weissenberger",
+    "subtitle": "Holistic Medicine with 2,000 Years of Experience",
+    "tagline": "Modern integrated. Scientifically oriented.",
+    "description": "Individual treatment according to TCM and WHO-ICD-11 classified.",
+    "insurance": "Health Insurance Recognized",
+    "quickAppointment": "Book Appointment",
+    "coreServices": "Our Treatments",
+    "aboutPreview": "About Us",
+    "uniqueFeatures": {
+      "title": "Our Unique Features",
+      "icd11": "Switzerland's first ICD-11-based intelligent TCM medical record system",
+      "ai": "AI-assisted health analysis",
+      "transparent": "Transparent treatment processes"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "mission": "Holistic medicine with scientific basis",
+    "values": "Transparent treatment according to modern standards"
+  },
+  "services": {
+    "title": "Services",
+    "acupuncture": {
+      "title": "Acupuncture",
+      "description": "Traditional acupuncture for pain relief and body regulation"
+    },
+    "herbs": {
+      "title": "Chinese Herbal Medicine",
+      "description": "Individual herbal formulations for constitution regulation"
+    },
+    "tuina": {
+      "title": "Tuina Massage",
+      "description": "Professional Tuina techniques for relaxation"
+    },
+    "cupping": {
+      "title": "Cupping",
+      "description": "Meridian clearing and blood activation"
+    },
+    "moxibustion": {
+      "title": "Moxibustion",
+      "description": "Warming and Qi strengthening"
+    },
+    "consultation": {
+      "title": "TCM Consultation",
+      "description": "Health assessment and lifestyle advice"
+    }
+  },
+  "symptoms": {
+    "title": "Symptoms",
+    "backPain": {
+      "title": "Back Pain – How Does Acupuncture Help?",
+      "description": "TCM treatment for back pain"
+    },
+    "migraine": {
+      "title": "Migraine – Scientific Studies on TCM",
+      "description": "TCM treatment for migraine"
+    },
+    "stress": {
+      "title": "Stress & Sleep Problems – Holistic Treatment",
+      "description": "Holistic treatment for stress and sleep problems"
+    },
+    "digestion": {
+      "title": "Digestive Problems – TCM Perspective and Therapy",
+      "description": "TCM treatment for digestive problems"
+    }
+  },
+  "appointment": {
+    "title": "Book Appointment",
+    "subtitle": "Simple appointment booking without registration",
+    "form": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "service": "Service",
+      "date": "Date",
+      "time": "Time",
+      "notes": "Notes",
+      "submit": "Book Appointment"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening Hours",
+    "transport": "Transport",
+    "parking": "Parking",
+    "insurance": "Insurance",
+    "prices": "Prices"
+  },
+  "footer": {
+    "description": "Professional TCM treatment in Switzerland",
+    "links": "Quick Links",
+    "contact": "Contact",
+    "copyright": "© 2024 TCM Weissenberger. All rights reserved."
+  }
+}
+
