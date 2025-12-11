@@ -17,21 +17,21 @@ export default async function AboutPage({ params }: { params: { locale: string }
           {content.hero?.subtitle && (
             <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto">{content.hero.subtitle}</p>
           )}
-          {content.hero?.youtubeId && (
+          {(content.hero as any)?.youtubeId && (
             <div className="mt-10 aspect-video max-w-4xl mx-auto">
               <iframe
                 className="w-full h-full rounded-lg shadow-lg"
-                src={`https://www.youtube.com/embed/${content.hero.youtubeId}`}
+                src={`https://www.youtube.com/embed/${(content.hero as any).youtubeId}`}
                 title="About Video"
                 allowFullScreen
               />
             </div>
           )}
-          {content.hero?.heroImage && !content.hero?.youtubeId && (
+          {(content.hero as any)?.heroImage && !(content.hero as any)?.youtubeId && (
             <div className="mt-10 max-w-4xl mx-auto">
               <img
-                src={content.hero.heroImage}
-                alt={content.hero.title || 'About'}
+                src={(content.hero as any).heroImage}
+                alt={content.hero?.title || 'About'}
                 className="w-full rounded-lg shadow-lg object-cover"
               />
             </div>

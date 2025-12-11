@@ -553,7 +553,7 @@ export default function AdminPage() {
               <p className="text-sm text-gray-600">编辑后写入 content/{'{locale}'}/{'{page}'}.json</p>
             </div>
             <div className="flex flex-wrap items-center gap-3">
-              <select className="border rounded px-3 py-2" value={locale} onChange={(e) => setLocale(e.target.value)}>
+              <select className="border rounded px-3 py-2" value={locale} onChange={(e) => setLocale(e.target.value as any)}>
                 {locales.map((loc) => (
                   <option key={loc} value={loc}>
                     {loc}

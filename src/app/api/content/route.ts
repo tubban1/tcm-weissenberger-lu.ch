@@ -36,8 +36,8 @@ export async function GET(req: NextRequest) {
     return json(400, { success: false, message: 'Unsupported locale' })
   }
 
-  const defaults = getDefaultContent(page as PageKey, locale)
-  const data = await readPageContent(page as PageKey, locale, defaults)
+  const defaults = getDefaultContent(page as PageKey, locale || undefined)
+  const data = await readPageContent(page as PageKey, locale || '', defaults)
 
   return json(200, { success: true, data })
 }
@@ -65,7 +65,7 @@ export async function POST(req: NextRequest) {
     return json(400, { success: false, message: 'Invalid JSON body' })
   }
 
-  await writePageContent(page as PageKey, locale, body)
+  await writePageContent(page as PageKey, locale || '', body)
   return json(200, { success: true })
 }
 

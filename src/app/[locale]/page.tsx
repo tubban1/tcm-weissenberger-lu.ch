@@ -8,7 +8,7 @@ export const revalidate = 0
 export default async function HomePage({ params }: { params: { locale: string } }) {
   const { locale } = params
   const content = await readPageContent('home', locale, homeDefaults(locale))
-  const hero = content.hero || {}
+  const hero = (content.hero || {}) as any
   const features = content.uniqueFeatures || []
   const services = content.services || []
 
