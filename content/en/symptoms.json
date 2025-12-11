@@ -1,0 +1,20 @@
+{
+  "locale": "en",
+  "hero": {
+    "title": "Symptoms",
+    "subtitle": "How TCM can help different conditions",
+    "youtubeId": "",
+    "heroImage": ""
+  },
+  "symptoms": [
+    { "title": "Back Pain", "description": "TCM treatment for back pain", "icon": "🔹" },
+    { "title": "Migraine", "description": "TCM & studies on headaches", "icon": "🔹" },
+    { "title": "Stress & Sleep", "description": "Holistic treatment for stress and sleep issues", "icon": "🔹" },
+    { "title": "Digestion", "description": "TCM perspective and therapy", "icon": "🔹" }
+  ],
+  "cta": {
+    "title": "Questions about your symptoms?",
+    "body": "Book a consultation for an individual treatment",
+    "label": "Book appointment"
+  }
+}

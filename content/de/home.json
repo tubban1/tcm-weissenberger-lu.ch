@@ -1,0 +1,35 @@
+{
+  "locale": "de",
+  "hero": {
+    "title": "TCM Weissenberger",
+    "subtitle": "Ganzheitliche Medizin mit 2.000 Jahren Erfahrung",
+    "tagline": "Modern integriert. Wissenschaftlich orientiert.",
+    "description": "Individuelle Behandlung nach TCM und WHO-ICD-11.",
+    "ctaLabel": "Termin vereinbaren",
+    "insurance": "ASCA / EMR anerkannt",
+    "heroImage": "",
+    "youtubeId": ""
+  },
+  "uniqueFeaturesTitle": "Unsere Besonderheiten",
+  "uniqueFeatures": [
+    {
+      "title": "ICD-11 System",
+      "description": "Schweizweit erstes ICD-11-basiertes intelligentes TCM-Dossier"
+    },
+    {
+      "title": "AI Analyse",
+      "description": "KI-unterstützte Gesundheitsanalyse"
+    },
+    {
+      "title": "Transparenz",
+      "description": "Transparente Behandlungsprozesse"
+    }
+  ],
+  "coreServicesTitle": "Unsere Behandlungen",
+  "coreServicesNote": "Wird stetig ergänzt",
+  "services": [
+    { "title": "Akupunktur", "description": "Schmerzlinderung und Regulation", "icon": "📍" },
+    { "title": "Chinesische Kräuter", "description": "Individuelle Rezepturen", "icon": "🌿" },
+    { "title": "Tuina", "description": "Entspannung und Regeneration", "icon": "💆" }
+  ]
+}

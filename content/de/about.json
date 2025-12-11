@@ -1,0 +1,30 @@
+{
+  "locale": "de",
+  "hero": {
+    "title": "Über uns",
+    "subtitle": "Ganzheitliche Medizin mit wissenschaftlicher Basis",
+    "youtubeId": "",
+    "heroImage": ""
+  },
+  "mission": {
+    "title": "Mission",
+    "body": "Ganzheitliche Medizin mit wissenschaftlicher Basis und moderner Transparenz."
+  },
+  "values": {
+    "title": "Werte",
+    "body": "Transparente Behandlung nach modernen Standards."
+  },
+  "qualificationsTitle": "Qualifikationen & Zertifizierungen",
+  "qualifications": [
+    {
+      "title": "Ausbildung",
+      "items": ["TCM Bachelor / Master", "Kontinuierliche Weiterbildung", "Evidenzbasierte Methoden"]
+    },
+    {
+      "title": "Zertifizierungen",
+      "items": ["ASCA anerkannt", "EMR anerkannt", "LCC anerkannt", "TCM-Fachverband Mitglied"]
+    }
+  ],
+  "languagesTitle": "Sprachen",
+  "languages": ["Deutsch", "English", "中文"]
+}

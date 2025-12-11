@@ -1,0 +1,22 @@
+{
+  "locale": "en",
+  "hero": {
+    "title": "Services",
+    "subtitle": "Professional TCM treatments for your health",
+    "youtubeId": "",
+    "heroImage": ""
+  },
+  "services": [
+    { "title": "Acupuncture", "description": "Pain reduction and regulation", "icon": "📍" },
+    { "title": "Chinese Herbal Medicine", "description": "Individual herbal formulas", "icon": "🌿" },
+    { "title": "Tuina Massage", "description": "Relaxation and recovery", "icon": "💆" },
+    { "title": "Cupping", "description": "Clear meridians and improve circulation", "icon": "🔥" },
+    { "title": "Moxibustion", "description": "Warming and Qi strengthening", "icon": "🌡️" },
+    { "title": "TCM Consultation", "description": "Health assessment and lifestyle advice", "icon": "💬" }
+  ],
+  "cta": {
+    "title": "Ready for a treatment?",
+    "body": "Book an appointment today",
+    "label": "Book now"
+  }
+}

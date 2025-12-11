@@ -1,0 +1,30 @@
+{
+  "locale": "zh-CN",
+  "hero": {
+    "title": "关于我们",
+    "subtitle": "以科学为基础的中医全科",
+    "youtubeId": "",
+    "heroImage": ""
+  },
+  "mission": {
+    "title": "使命",
+    "body": "以科学为基础的全人医疗，并保持现代化透明。"
+  },
+  "values": {
+    "title": "价值观",
+    "body": "按现代标准进行透明的诊疗。"
+  },
+  "qualificationsTitle": "资质与认证",
+  "qualifications": [
+    {
+      "title": "教育背景",
+      "items": ["TCM 本科/硕士", "持续进修", "循证方法"]
+    },
+    {
+      "title": "认证",
+      "items": ["ASCA 认证", "EMR 认证", "LCC 认可", "中医协会会员"]
+    }
+  ],
+  "languagesTitle": "语言",
+  "languages": ["德语", "英语", "中文"]
+}

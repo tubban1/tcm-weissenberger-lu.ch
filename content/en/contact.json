@@ -1,0 +1,30 @@
+{
+  "locale": "en",
+  "hero": {
+    "title": "Contact",
+    "subtitle": "",
+    "youtubeId": "",
+    "heroImage": ""
+  },
+  "details": {
+    "addressLabel": "Address",
+    "address": "Address will be added",
+    "phoneLabel": "Phone",
+    "phone": "Phone number will be added",
+    "emailLabel": "Email",
+    "email": "Email address will be added"
+  },
+  "hours": {
+    "title": "Opening Hours",
+    "rows": [
+      { "label": "Monday - Friday", "value": "09:00 - 18:00" },
+      { "label": "Saturday", "value": "By appointment" },
+      { "label": "Sunday", "value": "Closed" }
+    ]
+  },
+  "infoCards": [
+    { "title": "Transport", "body": "Public transport info will be added" },
+    { "title": "Parking", "body": "Parking info will be added" },
+    { "title": "Insurance", "body": "ASCA / EMR / LCC recognized. Please check with your insurer." }
+  ]
+}

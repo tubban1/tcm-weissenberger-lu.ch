@@ -1,0 +1,30 @@
+{
+  "locale": "zh-CN",
+  "hero": {
+    "title": "联系我们",
+    "subtitle": "",
+    "youtubeId": "",
+    "heroImage": ""
+  },
+  "details": {
+    "addressLabel": "地址",
+    "address": "地址待补充",
+    "phoneLabel": "电话",
+    "phone": "电话待补充",
+    "emailLabel": "邮箱",
+    "email": "邮箱待补充"
+  },
+  "hours": {
+    "title": "营业时间",
+    "rows": [
+      { "label": "周一 - 周五", "value": "09:00 - 18:00" },
+      { "label": "周六", "value": "预约制" },
+      { "label": "周日", "value": "休息" }
+    ]
+  },
+  "infoCards": [
+    { "title": "交通", "body": "公共交通信息待补充" },
+    { "title": "停车", "body": "停车信息待补充" },
+    { "title": "保险", "body": "ASCA / EMR / LCC 认可，请向保险公司确认" }
+  ]
+}

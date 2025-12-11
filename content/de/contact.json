@@ -1,0 +1,30 @@
+{
+  "locale": "de",
+  "hero": {
+    "title": "Kontakt",
+    "subtitle": "",
+    "youtubeId": "",
+    "heroImage": ""
+  },
+  "details": {
+    "addressLabel": "Adresse",
+    "address": "Adresse wird noch hinzugefügt",
+    "phoneLabel": "Telefon",
+    "phone": "Telefonnummer wird noch hinzugefügt",
+    "emailLabel": "E-Mail",
+    "email": "E-Mail-Adresse wird noch hinzugefügt"
+  },
+  "hours": {
+    "title": "Öffnungszeiten",
+    "rows": [
+      { "label": "Montag - Freitag", "value": "09:00 - 18:00" },
+      { "label": "Samstag", "value": "Nach Vereinbarung" },
+      { "label": "Sonntag", "value": "Geschlossen" }
+    ]
+  },
+  "infoCards": [
+    { "title": "ÖV", "body": "Öffentliche Verkehrsmittel Informationen werden noch hinzugefügt" },
+    { "title": "Parkplätze", "body": "Parkmöglichkeiten Informationen werden noch hinzugefügt" },
+    { "title": "Versicherung", "body": "ASCA / EMR / LCC anerkannt. Bitte Versicherung kontaktieren." }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "locale": "de",
+  "hero": {
+    "title": "Leistungen",
+    "subtitle": "Professionelle TCM-Behandlungen für Ihre Gesundheit",
+    "youtubeId": "",
+    "heroImage": ""
+  },
+  "services": [
+    { "title": "Akupunktur", "description": "Traditionelle Akupunktur für Schmerzreduktion und Regulation", "icon": "📍" },
+    { "title": "Chinesische Kräuter", "description": "Individuelle Kräuterrezepturen zur Konstitutionsregulation", "icon": "🌿" },
+    { "title": "Tuina", "description": "Tuina Techniken für Entspannung", "icon": "💆" },
+    { "title": "Schröpfen", "description": "Meridiane klären und Durchblutung aktivieren", "icon": "🔥" },
+    { "title": "Moxibustion", "description": "Wärmen und Qi stärken", "icon": "🌡️" },
+    { "title": "TCM Konsultation", "description": "Gesundheitsbewertung & Lifestyle-Beratung", "icon": "💬" }
+  ],
+  "cta": {
+    "title": "Bereit für eine Behandlung?",
+    "body": "Vereinbaren Sie noch heute einen Termin",
+    "label": "Termin vereinbaren"
+  }
+}

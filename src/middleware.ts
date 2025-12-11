@@ -15,6 +15,7 @@ export const config = {
   // - API 路由
   // - _next 静态文件
   // - 图片等静态资源
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
+  // - /admin 后台（不做语言前缀重写）
+  matcher: ['/((?!api|_next|_vercel|admin|.*\\..*).*)']
 };
 

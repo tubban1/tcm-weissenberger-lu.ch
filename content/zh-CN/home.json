@@ -1,0 +1,47 @@
+{
+  "locale": "zh-CN",
+  "hero": {
+    "title": "TCM Weissenberger Lu",
+    "subtitle": "拥有 2000 年经验的中医全科",
+    "tagline": "现代整合，科学导向",
+    "description": "基于中医与 WHO-ICD-11 的个性化诊疗。",
+    "ctaLabel": "预约",
+    "insurance": "ASCA / EMR 认可",
+    "heroImage": "",
+    "youtubeId": ""
+  },
+  "uniqueFeaturesTitle": "我们的特色",
+  "uniqueFeatures": [
+    {
+      "title": "ICD-11 系统",
+      "description": "瑞士首个基于 ICD-11 的智能中医病历系统"
+    },
+    {
+      "title": "AI 分析",
+      "description": "AI 辅助健康分析"
+    },
+    {
+      "title": "透明",
+      "description": "透明的诊疗流程"
+    }
+  ],
+  "coreServicesTitle": "核心服务",
+  "coreServicesNote": "更多服务即将上线",
+  "services": [
+    {
+      "title": "针灸",
+      "description": "止痛与调理",
+      "icon": "📍"
+    },
+    {
+      "title": "中药",
+      "description": "个性化方剂",
+      "icon": "🌿"
+    },
+    {
+      "title": "推拿",
+      "description": "放松与修复",
+      "icon": "💆"
+    }
+  ]
+}

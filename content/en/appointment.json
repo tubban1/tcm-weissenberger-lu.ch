@@ -1,0 +1,10 @@
+{
+  "locale": "en",
+  "hero": {
+    "title": "Book Appointment",
+    "subtitle": "Simple appointment booking without registration",
+    "youtubeId": "",
+    "heroImage": ""
+  },
+  "calendarUrl": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1it6AjotMsExF6VbZH6WcVYds3A4ElpTdbpXh668CxO7MTdxskRnyplsLs9PNv3ZCp4bK2ZA76?gv=true&hl=en"
+}

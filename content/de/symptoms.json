@@ -1,0 +1,20 @@
+{
+  "locale": "de",
+  "hero": {
+    "title": "Beschwerden",
+    "subtitle": "Wie TCM bei verschiedenen Beschwerden helfen kann",
+    "youtubeId": "",
+    "heroImage": ""
+  },
+  "symptoms": [
+    { "title": "Rückenschmerzen", "description": "TCM Behandlung für Rückenbeschwerden", "icon": "🔹" },
+    { "title": "Migräne", "description": "TCM & Studien zu Kopfschmerzen", "icon": "🔹" },
+    { "title": "Stress & Schlaf", "description": "Ganzheitliche Behandlung von Stress & Schlaf", "icon": "🔹" },
+    { "title": "Verdauung", "description": "TCM Perspektive und Therapie", "icon": "🔹" }
+  ],
+  "cta": {
+    "title": "Fragen zu Ihrer Beschwerde?",
+    "body": "Buchen Sie eine Beratung für eine individuelle Behandlung",
+    "label": "Termin vereinbaren"
+  }
+}

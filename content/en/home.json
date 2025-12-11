@@ -1,0 +1,35 @@
+{
+  "locale": "en",
+  "hero": {
+    "title": "TCM Weissenberger",
+    "subtitle": "Holistic medicine with 2,000 years of experience",
+    "tagline": "Modern integrated. Scientifically oriented.",
+    "description": "Individual treatment according to TCM and WHO-ICD-11.",
+    "ctaLabel": "Book Appointment",
+    "insurance": "Health Insurance Recognized",
+    "heroImage": "",
+    "youtubeId": ""
+  },
+  "uniqueFeaturesTitle": "Our Unique Features",
+  "uniqueFeatures": [
+    {
+      "title": "ICD-11 System",
+      "description": "Switzerland's first ICD-11-based intelligent TCM medical record system"
+    },
+    {
+      "title": "AI Analysis",
+      "description": "AI-assisted health analysis"
+    },
+    {
+      "title": "Transparency",
+      "description": "Transparent treatment processes"
+    }
+  ],
+  "coreServicesTitle": "Our Treatments",
+  "coreServicesNote": "More services coming soon",
+  "services": [
+    { "title": "Acupuncture", "description": "Pain relief and regulation", "icon": "📍" },
+    { "title": "Chinese Herbal Medicine", "description": "Individual herbal formulations", "icon": "🌿" },
+    { "title": "Tuina Massage", "description": "Relaxation and recovery", "icon": "💆" }
+  ]
+}

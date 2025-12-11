@@ -1,0 +1,30 @@
+{
+  "locale": "en",
+  "hero": {
+    "title": "About Us",
+    "subtitle": "Holistic medicine with scientific basis",
+    "youtubeId": "",
+    "heroImage": ""
+  },
+  "mission": {
+    "title": "Mission",
+    "body": "Holistic medicine with scientific foundation and modern transparency."
+  },
+  "values": {
+    "title": "Values",
+    "body": "Transparent treatment according to modern standards."
+  },
+  "qualificationsTitle": "Qualifications & Certifications",
+  "qualifications": [
+    {
+      "title": "Education",
+      "items": ["TCM Bachelor / Master", "Continuous education", "Evidence-based methods"]
+    },
+    {
+      "title": "Certifications",
+      "items": ["ASCA recognized", "EMR recognized", "LCC recognized", "Member of TCM Association"]
+    }
+  ],
+  "languagesTitle": "Languages",
+  "languages": ["German", "English", "中文"]
+}

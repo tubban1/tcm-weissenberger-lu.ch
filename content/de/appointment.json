@@ -1,0 +1,10 @@
+{
+  "locale": "de",
+  "hero": {
+    "title": "Termin buchen",
+    "subtitle": "Einfache Terminbuchung ohne Registrierung",
+    "youtubeId": "",
+    "heroImage": ""
+  },
+  "calendarUrl": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1it6AjotMsExF6VbZH6WcVYds3A4ElpTdbpXh668CxO7MTdxskRnyplsLs9PNv3ZCp4bK2ZA76?gv=true&hl=de"
+}
