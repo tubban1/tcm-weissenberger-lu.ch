@@ -176,6 +176,8 @@ export const contactDefaults = (locale?: string) => ({
       body: 'ASCA / EMR / LCC anerkannt. Bitte Versicherung kontaktieren.',
     },
   ],
+  mapTitle: 'Anfahrt',
+  mapEmbedUrl: '',
 })
 
 export function getDefaultContent(page: PageKey, locale?: string) {

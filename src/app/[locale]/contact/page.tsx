@@ -39,6 +39,24 @@ export default async function ContactPage({ params }: { params: { locale: string
         </div>
       </section>
 
+      {content.mapEmbedUrl && (
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">{content.mapTitle || 'Anfahrt'}</h2>
+            <div className="aspect-video w-full bg-gray-100 rounded-lg overflow-hidden shadow">
+              <iframe
+                src={content.mapEmbedUrl}
+                className="w-full h-full"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google Map"
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8">

@@ -8,11 +8,11 @@
   },
   "details": {
     "addressLabel": "Adresse",
-    "address": "Adresse wird noch hinzugefügt",
+    "address": "Schaffhauserstrasse 466, 8052 Zürich",
     "phoneLabel": "Telefon",
-    "phone": "Telefonnummer wird noch hinzugefügt",
+    "phone": "078 789 8887 / 043 300 9712",
     "emailLabel": "E-Mail",
-    "email": "E-Mail-Adresse wird noch hinzugefügt"
+    "email": "info@tcm-weissenberger-lu.ch"
   },
   "hours": {
     "title": "Öffnungszeiten",
@@ -26,5 +26,7 @@
     { "title": "ÖV", "body": "Öffentliche Verkehrsmittel Informationen werden noch hinzugefügt" },
     { "title": "Parkplätze", "body": "Parkmöglichkeiten Informationen werden noch hinzugefügt" },
     { "title": "Versicherung", "body": "ASCA / EMR / LCC anerkannt. Bitte Versicherung kontaktieren." }
-  ]
+  ],
+  "mapTitle": "Anfahrt",
+  "mapEmbedUrl": "https://www.google.com/maps?q=Schaffhauserstrasse+466+8052+Z%C3%BCrich&output=embed"
 }

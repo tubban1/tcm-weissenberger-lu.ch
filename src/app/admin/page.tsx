@@ -422,6 +422,19 @@ export default function AdminPage() {
           onChange={(v) => setField(['hero', 'heroImage'], v)}
         />
 
+        <SectionTitle title="地图" />
+        <Input
+          label="地图标题"
+          value={form.mapTitle || ''}
+          onChange={(v) => setField(['mapTitle'], v)}
+        />
+        <Input
+          label="Google Maps Embed URL"
+          value={form.mapEmbedUrl || ''}
+          onChange={(v) => setField(['mapEmbedUrl'], v)}
+          placeholder="https://www.google.com/maps?q=...&output=embed"
+        />
+
         <SectionTitle title="联系信息" />
         <Input
           label="地址标题"
