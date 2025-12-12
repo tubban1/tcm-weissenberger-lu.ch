@@ -1,6 +1,6 @@
 import { locales } from '@/i18n/config'
 
-export type PageKey = 'home' | 'about' | 'services' | 'symptoms' | 'appointment' | 'contact'
+export type PageKey = 'home' | 'about' | 'services' | 'symptoms' | 'appointment' | 'contact' | 'footer'
 
 const DEFAULT_LOCALE = locales[0]
 
@@ -180,6 +180,30 @@ export const contactDefaults = (locale?: string) => ({
   mapEmbedUrl: '',
 })
 
+export const footerDefaults = (locale?: string) => ({
+  locale: fallbackLocale(locale),
+  companyName: 'TCM Weissenberger',
+  description: 'Ganzheitliche Medizin mit wissenschaftlicher Basis und moderner Transparenz.',
+  links: [
+    { label: 'Über uns', href: '/about' },
+    { label: 'Leistungen', href: '/services' },
+    { label: 'Termin', href: '/appointment' },
+    { label: 'Kontakt', href: '/contact' },
+  ],
+  contact: {
+    title: 'Kontakt',
+    address: '',
+    phone: '',
+    email: '',
+  },
+  copyright: {
+    text: '© 2025 Powered by',
+    linkText: 'Tubban.com',
+    linkUrl: 'https://tubban.com',
+    suffix: 'Agentic AI Services.',
+  },
+})
+
 export function getDefaultContent(page: PageKey, locale?: string) {
   switch (page) {
     case 'home':
@@ -194,6 +218,8 @@ export function getDefaultContent(page: PageKey, locale?: string) {
       return appointmentDefaults(locale)
     case 'contact':
       return contactDefaults(locale)
+    case 'footer':
+      return footerDefaults(locale)
     default:
       return homeDefaults(locale)
   }

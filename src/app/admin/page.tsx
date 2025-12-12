@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState, useCallback } from 'react'
 import { locales } from '@/i18n/config'
 import { pageKeys } from '@/lib/pageKeys'
 
@@ -45,20 +45,41 @@ export default function AdminPage() {
     }
   }
 
-  const loadContent = async () => {
+  const loadContent = useCallback(async () => {
+    console.log('[loadContent] Loading:', { page, locale })
     setStatus({ type: 'loading', message: '加载中...' })
     try {
-      const res = await fetch(`/api/content?page=${page}&locale=${locale}`)
-      const data = await res.json()
-      if (!res.ok || !data?.success) {
-        throw new Error(data?.message || '加载失败')
+      const url = `/api/content?page=${page}&locale=${locale}`
+      console.log('[loadContent] Fetching:', url)
+      const res = await fetch(url)
+      
+      // 先读取文本，避免 JSON 解析错误
+      const text = await res.text()
+      if (!text) {
+        throw new Error('响应为空')
       }
+
+      let data: any
+      try {
+        data = JSON.parse(text)
+      } catch (parseError) {
+        throw new Error(`JSON 解析失败: ${text.substring(0, 100)}`)
+      }
+
+      if (!res.ok || !data?.success) {
+        throw new Error(data?.message || `加载失败 (${res.status})`)
+      }
+
+      console.log('[loadContent] Success:', { page, locale, dataKeys: Object.keys(data.data || {}) })
       setForm(data.data || {})
       setStatus({ type: 'success', message: '已加载' })
     } catch (err: any) {
+      console.error('[loadContent Error]', err)
       setStatus({ type: 'error', message: err?.message || '加载失败' })
+      // 清空表单，避免显示旧数据
+      setForm({})
     }
-  }
+  }, [page, locale])
 
   const saveContent = async () => {
     setStatus({ type: 'loading', message: '保存中...' })
@@ -500,6 +521,89 @@ export default function AdminPage() {
     )
   }
 
+  const renderFooterForm = () => {
+    const linksText = arrayToLines(form.links, (l) => `${l.label || ''}|${l.href || ''}`)
+    return (
+      <div className="space-y-4">
+        <SectionTitle title="公司信息" />
+        <Input
+          label="公司名称"
+          value={form.companyName || ''}
+          onChange={(v) => setField(['companyName'], v)}
+        />
+        <Textarea
+          label="公司描述"
+          value={form.description || ''}
+          onChange={(v) => setField(['description'], v)}
+        />
+
+        <SectionTitle title="导航链接" />
+        <Textarea
+          label="链接列表（每行：标签|路径）"
+          value={linksText}
+          onChange={(v) =>
+            setField(
+              ['links'],
+              linesToArray(v, (line) => {
+                const [label = '', href = ''] = line.split('|')
+                return { label, href }
+              })
+            )
+          }
+          placeholder="关于我们|/about&#10;服务|/services&#10;预约|/appointment&#10;联系我们|/contact"
+        />
+
+        <SectionTitle title="联系信息" />
+        <Input
+          label="联系标题"
+          value={form.contact?.title || ''}
+          onChange={(v) => setField(['contact', 'title'], v)}
+        />
+        <Input
+          label="地址"
+          value={form.contact?.address || ''}
+          onChange={(v) => setField(['contact', 'address'], v)}
+        />
+        <Input
+          label="电话"
+          value={form.contact?.phone || ''}
+          onChange={(v) => setField(['contact', 'phone'], v)}
+        />
+        <Input
+          label="邮箱"
+          value={form.contact?.email || ''}
+          onChange={(v) => setField(['contact', 'email'], v)}
+        />
+
+        <SectionTitle title="版权信息" />
+        <Input
+          label="版权文本（链接前）"
+          value={form.copyright?.text || ''}
+          onChange={(v) => setField(['copyright', 'text'], v)}
+          placeholder="© 2025 Powered by"
+        />
+        <Input
+          label="链接文本"
+          value={form.copyright?.linkText || ''}
+          onChange={(v) => setField(['copyright', 'linkText'], v)}
+          placeholder="Tubban.com"
+        />
+        <Input
+          label="链接 URL"
+          value={form.copyright?.linkUrl || ''}
+          onChange={(v) => setField(['copyright', 'linkUrl'], v)}
+          placeholder="https://tubban.com"
+        />
+        <Input
+          label="链接后文本"
+          value={form.copyright?.suffix || ''}
+          onChange={(v) => setField(['copyright', 'suffix'], v)}
+          placeholder="Agentic AI Services."
+        />
+      </div>
+    )
+  }
+
   const renderFormByPage = () => {
     switch (page) {
       case 'home':
@@ -514,16 +618,23 @@ export default function AdminPage() {
         return renderAppointmentForm()
       case 'contact':
         return renderContactForm()
+      case 'footer':
+        return renderFooterForm()
       default:
         return null
     }
   }
 
-  // load when page/locale changes
+  // load when page/locale changes (only if authenticated)
   useEffect(() => {
-    loadContent()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [page, locale])
+    console.log('[useEffect] Triggered:', { page, locale, isAuthed })
+    if (isAuthed) {
+      // 切换时先清空表单，显示加载状态
+      setForm({})
+      setStatus({ type: 'loading', message: '加载中...' })
+      loadContent()
+    }
+  }, [page, locale, isAuthed, loadContent])
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-primary-50 via-white to-primary-50 py-10">
@@ -549,8 +660,8 @@ export default function AdminPage() {
         <div className="bg-white rounded-2xl shadow-lg border border-primary-100 p-6 md:p-8 space-y-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="space-y-1">
-              <h1 className="text-2xl md:text-3xl font-bold text-primary-700">内容后台（文件存储，无数据库）</h1>
-              <p className="text-sm text-gray-600">编辑后写入 content/{'{locale}'}/{'{page}'}.json</p>
+              <h1 className="text-2xl md:text-3xl font-bold text-primary-700">内容管理后台</h1>
+              <p className="text-sm text-gray-600">编辑内容并保存到数据库</p>
             </div>
             <div className="flex flex-wrap items-center gap-3">
               <select className="border rounded px-3 py-2" value={locale} onChange={(e) => setLocale(e.target.value as any)}>
@@ -630,10 +741,11 @@ export default function AdminPage() {
 
           <div className="text-xs text-gray-500 space-y-1">
             <p>操作说明：</p>
-            <p>- 读取：从 content/{'{locale}'}/{'{page}'}.json 读取，若不存在用默认模板</p>
-            <p>- 保存：需要 Authorization Bearer {`<ADMIN_TOKEN>`} 或 {`<ADMIN_PW>`}，写入 JSON 文件</p>
+            <p>- 读取：从数据库 tcm_lu_page_content 表读取，若不存在使用默认模板</p>
+            <p>- 保存：需要 Authorization Bearer {`<ADMIN_TOKEN>`} 或 {`<ADMIN_PW>`}，保存到数据库</p>
             <p>- 图片：上传后返回 URL，粘贴到相应图片字段</p>
             <p>- 视频：填写 youtubeId（如 kXYiU_JCYtU）嵌入视频</p>
+            <p>- Footer：选择 "footer" 页面编辑底部信息</p>
           </div>
         </div>
         )}
