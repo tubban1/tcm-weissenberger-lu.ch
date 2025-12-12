@@ -48,6 +48,8 @@ export const aboutDefaults = (locale?: string) => ({
   hero: {
     title: 'Über uns',
     subtitle: 'Ganzheitliche Medizin mit wissenschaftlicher Basis',
+    youtubeId: '',
+    heroImage: '',
   },
   mission: {
     title: 'Mission',
@@ -70,8 +72,6 @@ export const aboutDefaults = (locale?: string) => ({
   ],
   languagesTitle: 'Sprachen',
   languages: ['Deutsch', 'English', '中文'],
-  heroVideoId: '',
-  heroImage: '',
 })
 
 export const servicesDefaults = (locale?: string) => ({

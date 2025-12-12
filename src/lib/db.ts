@@ -55,8 +55,6 @@ async function getPool(): Promise<mysql.Pool> {
       connectTimeout: 10000,
       enableKeepAlive: true,
       keepAliveInitialDelay: 0,
-      // 添加连接池配置，确保连接被正确复用
-      acquireTimeout: 10000, // 获取连接的超时时间
     })
     global.__dbPoolInitialized = true
     console.log('[DB] Connection pool initialized')
