@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useLocale } from 'next-intl'
@@ -10,6 +11,7 @@ export default function Nav() {
   const pathname = usePathname()
   const locale = useLocale()
   const t = useTranslations('nav')
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navItems = [
     { href: `/${locale}`, key: 'home' },
@@ -46,13 +48,44 @@ export default function Nav() {
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center gap-3">
             <LanguageSwitcher />
-            <button className="text-gray-700 hover:text-primary-600">
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+            <button 
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="text-gray-700 hover:text-primary-600 transition-colors"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
             </button>
           </div>
         </div>
+        {/* Mobile menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-gray-200 py-4">
+            <div className="flex flex-col space-y-2">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    pathname === item.href || pathname.startsWith(item.href + '/')
+                      ? 'text-primary-600 bg-primary-50'
+                      : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
+                  }`}
+                >
+                  {t(item.key)}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   )
